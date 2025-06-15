@@ -8,31 +8,25 @@
 	cadena3 db "3) Lee 8 caracteres binarios (1 nro de 8 bits)",0dh,0ah,24h
 	cadena7 db "3) SALIR",0dh,0ah,24h
 ;--------------------------------------------
-;--------------------------------------------
 	imprimo db "1) Imprime ",0dh,0ah,24h
 	impresion1 db "A) Texto ingresado ",0dh,0ah,24h
 	impresion2 db "B) Cantidad de caracteres del texto ingresado ",0dh,0ah,24h
 	impresion3 db "C) Numero o binario leido (en decimal) ",0dh,0ah,24h
 	vuelvoC db "2) Volver a cargar ",0dh,0ah,24h
 ;--------------------------------------------
-;--------------------------------------------
 	longitud db 0 ,24h
 	Ascii db '000',0dh,0ah,24h
 	espacio db "",0dh,0ah,24h
 ;--------------------------------------------	
-;--------------------------------------------
 	cartelitoDc db "Ingrese el caracter deseado en decimal: ",24h
 	nroAscii  db '000',0dh,0ah,24h
-;--------------------------------------------
 ;--------------------------------------------
 	txt db 255 dup (24h), 0dh,0ah,24h
 	cartelito db "Ingrese su texto: ",24h
 ;--------------------------------------------
-;--------------------------------------------
 	bin     db "00000000",0dh, 0ah, 24h
     decimal db "000",0dh, 0ah, 24h
     cartel  db "Ingrese un Nro binario de 8 bits", 0dh,0ah, 24h
-;--------------------------------------------
 ;--------------------------------------------
 
 .code
